@@ -8,7 +8,9 @@
               <i class="fas fa-search fa-fw"></i>
           </button>
       </div>
-      <p>並べ替え</p>
+      <%= link_to '古い順', items_path(old: "true") %>
+      <%= link_to '新しい順', items_path(latest: "true") %>
+      <%= link_to '期限の近い順', items_path(deadline: "true") %>
     </div>
     <div class='item-contents'>
       <table>
