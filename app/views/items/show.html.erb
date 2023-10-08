@@ -5,4 +5,4 @@
 <%= @item.category_id %>
 
 <%= link_to '編集', '#', method: :get %>
-<%= link_to '削除', '#', method: :get %>
+<%= link_to '削除', item_path(@item.id) , method: :delete %>
