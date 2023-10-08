@@ -1,7 +1,15 @@
 class ItemsController < ApplicationController
 
   def index
-    @items = Item.all
+    if params[:latest]
+      @items = Item.latest
+    elsif params[:old]
+      @items = Item.old
+    elsif params[:deadline]
+      @items = Item.deadline
+    else
+      @items = Item.all
+    end
   end
 
   def new
