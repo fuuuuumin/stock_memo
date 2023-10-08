@@ -1,0 +1,26 @@
+<%= render "shared/header" %>
+<div class='main'>
+  <div class="wrapper">
+    <div class='search-contents'>
+      <div class="search-box">
+          <input type="text" placeholder="検索ワード">
+          <button type="submit">
+              <i class="fas fa-search fa-fw"></i>
+          </button>
+      </div>
+      <p>並べ替え</p>
+    </div>
+    <div class='item-contents'>
+      <table>
+        <tr>
+          <th>名前</th><th>個数</th><th>期限</th>
+        </tr>
+        <% @items.each do |item| %>
+          <tr>
+            <td><%= item.name %></td><td><%= item.number %></td><td><%= item.deadline %></td>
+          </tr>
+        <% end %>
+      </table>
+    </div>
+  </div>
+</div>

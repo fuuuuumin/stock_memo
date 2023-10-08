@@ -1,0 +1,101 @@
+
+/* リセットCSS */
+
+body {
+  font-size: 14px;
+  color: #333;
+  margin: 0 auto;
+}
+h1,h2,h3,h4,h5,h6,p {
+  padding: 10px 0;
+  margin: 0;
+}
+
+ul,li {
+  padding: 0;
+  margin: 0;
+}
+
+*{
+  text-decoration: none;
+}
+
+
+/* 共通箇所 */
+
+.wrapper {
+  width: 420px;
+  margin: 0 auto;
+}
+
+/* ヘッダー */
+
+.header {
+  background-color: #F5F5DC;
+  height: 60px;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  color: #333;
+  font-size: 22px;
+  line-height: 60px;
+}
+
+.header-right {
+  display: flex;
+}
+
+.header-button {
+  padding: 10px 30px;
+  background-color: #004225;
+  border-radius: 3px;
+  align-items: center;
+}
+
+.header-button-text {
+  color: #fff;
+}
+
+
+/* メインコンテンツ */
+
+.main {
+  background-color: #F5F5DC;
+  height: 100vh;
+}
+
+.search-box {
+  display: flex;
+  width: 10%;
+}
+
+.search-box input[type="text"] {
+  flex-grow: 1;
+  padding: 0.7rem 0 0.7rem 0.8rem;
+  border: 1px solid #333947;
+  border-radius: 1.5rem 0 0 1.5rem;
+}
+
+.search-box button {
+  cursor: pointer;
+  padding: .8rem .9rem .8rem .8rem;
+  border-radius: 0 1.5rem 1.5rem 0;
+  border: none;
+  background-color: #333947;
+  color: #fff;
+  font-size: .75rem;
+}
+
+.search-box input:focus {
+  outline: 0;
+  border: 1px solid #4ab6f6;
+}
+
+.search-box button:hover {
+  color: #4ab6f6;
+}
