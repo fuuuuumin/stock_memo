@@ -1,0 +1,9 @@
+
+<%= form_with(model: @item, local: true) do |form| %>
+  <%= render 'shared/error_messages', model: form.object %>
+      <%= form.text_field :name, placeholder: "名前" %>
+      <%= form.text_field :number, placeholder: "個数" %>
+      <%= form.date_field :deadline, placeholder: "期限" %>
+      <%= form.text_field :category_id, placeholder: "カテゴリー" %>
+      <%= form.submit "SEND" %>
+<% end %>
