@@ -17,7 +17,7 @@
         </tr>
         <% @items.each do |item| %>
           <tr>
-            <td><%= item.name %></td><td><%= item.number %></td><td><%= item.deadline %></td>
+            <td><%= link_to item.name, item_path(item.id), method: :get %></td><td><%= item.number %></td><td><%= item.deadline %></td>
           </tr>
         <% end %>
       </table>
