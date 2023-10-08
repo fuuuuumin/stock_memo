@@ -2,7 +2,7 @@
 <%= @item.name %>
 <%= @item.number %>
 <%= @item.deadline %>
-<%= @item.category_id %>
+<%= @item.category.name %>
 
 <%= link_to '編集', '#', method: :get %>
 <%= link_to '削除', item_path(@item.id) , method: :delete %>
